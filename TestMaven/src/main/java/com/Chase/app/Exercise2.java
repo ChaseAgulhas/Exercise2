@@ -19,4 +19,27 @@ public class Exercise2 {
     {
         return this;
     }
+
+    public boolean isItTrue()
+    {
+        return 1==1;
+    }
+
+    public boolean isItFalse()
+    {
+        return 1!=1;
+    }
+
+    public String nullValues()
+    {
+        String name = null;
+        return name;
+    }
+
+    public int failTest( int a )
+    {
+        return a;
+    }
+
+
 }

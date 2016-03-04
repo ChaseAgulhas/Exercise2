@@ -35,5 +35,32 @@ public class TestExercise2 {
         
     }
 
+    @Test
+    public void testTruth() throws Exception {
 
+        Assert.assertTrue(x1.isItTrue());
+
+
+    }
+
+    @Test
+    public void testFalse() throws Exception {
+
+        Assert.assertFalse(x1.isItFalse());
+
+    }
+
+    @Test
+    public void testNull() throws Exception {
+
+        Assert.assertNull(x1.nullValues());
+
+    }
+
+    @Test
+    public void testFailing() throws Exception {
+
+        Assert.assertEquals(x1.failTest(4), 4);
+
+    }
 }
