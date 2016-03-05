@@ -36,9 +36,35 @@ public class Exercise2 {
         return name;
     }
 
+    public boolean objIdentity()
+    {
+        Exercise2 obj1 = new Exercise2();
+        Exercise2 obj2 = obj1;
+        return obj1==obj2;
+
+    }
+
+    public String notNullString()
+    {
+        String name = "Chase";
+        return name;
+    }
+
     public int failTest( int a )
     {
         return a;
+    }
+
+    public int exceptionsTest(int numPosition)
+    {
+        int numbers[] = new int[3];
+        return numbers[numPosition];
+    }
+
+    public int[] arrayEquality()
+    {
+        int numbers[] = {1, 2, 4};
+        return numbers;
     }
 
 
